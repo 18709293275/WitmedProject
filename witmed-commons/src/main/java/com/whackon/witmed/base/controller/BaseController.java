@@ -1,12 +1,9 @@
 package com.whackon.witmed.base.controller;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-
 /**
  * <b>系统基础信息类 - 控制层基础类</b>
  * <p>

@@ -1,5 +1,4 @@
 package com.whackon.witmed.base.pojo.entity;
-
 import java.io.Serializable;
 import java.util.Date;
 
