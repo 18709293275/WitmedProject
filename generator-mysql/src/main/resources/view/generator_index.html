@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Title</title>
+		<link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+		<script type="application/javascript" src="/js/jquery-3.6.0.min.js"></script>
+		<script type="application/javascript" src="/js/bootstrap.min.js"></script>
+		<style rel="stylesheet" type="text/css">
+			div {
+				width: 642px;
+				height: 590px;
+				border-radius: 30px;
+				padding: 50px;
+				margin: auto;
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+			}
+
+			caption {
+				text-align: center;
+			}
+
+			table {
+				border-collapse: separate;
+				border-spacing: 10px;
+			}
+
+			.columntd {
+				text-align: right;
+				font: bold normal 18px 微软雅黑;
+			}
+		</style>
+		<script type="application/javascript">
+			function createFile() {
+				var formData = $("#myForm").serialize();
+				$.ajax({
+					url: "/generate",
+					type: "post",
+					data: formData,
+					dataType: "json",
+					success: function (data) {
+						if (data) {
+							alert("生成成功！");
+						} else {
+							alert("生成失败！");
+						}
+					}
+				});
+			}
+		</script>
+	</head>
+	<body>
+		<div>
+			<form id="myForm">
+				<table>
+					<caption>
+						<h1>Stupid 代码生成器</h1>
+						<span>【MySQL 版 v1.0.0】</span>
+					</caption>
+					<tr>
+						<td class="columntd">
+							<span>数据库 IP 地址：</span>
+						</td>
+						<td>
+							<input type="text" id="dbIP" name="dbIP" class="form-control" style="width: 300px;" placeholder="请填写您的数据库连接 IP 地址"/>
+						</td>
+					</tr>
+					<tr>
+						<td class="columntd">
+							<span>数据库连接端口号：</span>
+						</td>
+						<td>
+							<input type="text" id="dbPort" name="dbPort" class="form-control" style="width: 300px;" placeholder="请填写您的数据库连接端口号"/>
+						</td>
+					</tr>
+					<tr>
+						<td class="columntd">
+							<span>连接数据库名：</span>
+						</td>
+						<td>
+							<input type="text" id="dbName" name="dbName" class="form-control" style="width: 300px;" placeholder="请填写您要连接的数据库名"/>
+						</td>
+					</tr>
+					<tr>
+						<td class="columntd">
+							<span>数据库登录用户名：</span>
+						</td>
+						<td>
+							<input type="text" id="dbUser" name="dbUser" class="form-control" style="width: 300px;" placeholder="请填写您的数据库登录用户名"/>
+						</td>
+					</tr>
+					<tr>
+						<td class="columntd">
+							<span>数据库登录密码：</span>
+						</td>
+						<td>
+							<input type="text" id="dbPassword" name="dbPassword" class="form-control" style="width: 300px;" placeholder="请填写您的数据库登录密码"/>
+						</td>
+					</tr>
+					<tr>
+						<td class="columntd">
+							<span>生成文件夹路径：</span>
+						</td>
+						<td>
+							<input type="text" id="outFolderPath" name="outFolderPath" class="form-control" style="width: 300px;" placeholder="请填写生成文件的存放路径"/>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" class="columntd">
+							<a href="javascript:createFile();" class="btn btn-success">
+								<i class="fa fa-check"></i>&nbsp;
+								<span>生成文件</span>
+							</a>
+						</td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</body>
+</html>

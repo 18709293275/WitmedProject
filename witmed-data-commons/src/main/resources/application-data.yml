@@ -16,5 +16,5 @@ spring:
       max-evictable-idle-time-millis: 60000
 ### 配置 MyBatis 项目信息
 mybatis:
-  mapper-locations: classpath:/mapper/*/*/*.Mapper.xml
+  mapper-locations: classpath:/mapper/*/*.Mapper.xml
   type-aliases-package: com.whackon.witmed

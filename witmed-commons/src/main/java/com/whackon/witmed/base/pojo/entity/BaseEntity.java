@@ -1,67 +1,68 @@
 package com.whackon.witmed.base.pojo.entity;
+
 import java.io.Serializable;
 import java.util.Date;
 
 /**
- * <b>系统基础信息类 - 基础实体信息</b>
+ * <b>系统基础实体信息</b>
  * <p>
- *     基础实体信息包含一下属性：<br/>
- *     1、系统状态：status<br/>
- *     2、创建人：createUser<br/>
- *     3、创建时间：createTime<br/>
- *     4、修改人：updateUser<br/>
- *     5、修改时间：updateTime<br/>
- *     所有功能的实体信息<b>都必须继承于本基础实体信息</b>。
+ *     系统基础实体信息设置了如下属性：<br/>
+ *     1、status：系统状态<br/>
+ *     2、createUser：创建人<br/>
+ *     3、createTime：创建时间<br/>
+ *     4、updateUser：修改人<br/>
+ *     5、updateTime：修改时间<br/>
+ *     本项目所有实体信息<b>都必须继承于本统基础实体信息</b>。
  * </p>
- * @author He'l'lo'World
+ * @author Arthur
  * @version 1.0.0
  * @since 1.0.0
  */
 public class BaseEntity implements Serializable {
-	private static final long serialVersionUID = 377806458505909427L;
-	private String status;                      // 系统状态：0-禁用，1-启用
-	private String createUser;                  // 创建人
-	private Date createTime;                    // 创建时间
-	private String updateUser;                  // 修改人
-	private Date updateTime;                    // 修改时间
+    private static final long serialVersionUID = 377806458505909427L;
+    private String status;                      // 系统状态
+    private String createUser;                  // 创建人
+    private Date createTime;                    // 创建时间
+    private String updateUser;                  // 修改人
+    private Date updateTime;                    // 修改时间
 
-	public String getStatus() {
-		return status;
-	}
+    public String getStatus() {
+        return status;
+    }
 
-	public void setStatus(String status) {
-		this.status = status;
-	}
+    public void setStatus(String status) {
+        this.status = status;
+    }
 
-	public String getCreateUser() {
-		return createUser;
-	}
+    public String getCreateUser() {
+        return createUser;
+    }
 
-	public void setCreateUser(String createUser) {
-		this.createUser = createUser;
-	}
+    public void setCreateUser(String createUser) {
+        this.createUser = createUser;
+    }
 
-	public Date getCreateTime() {
-		return createTime;
-	}
+    public Date getCreateTime() {
+        return createTime;
+    }
 
-	public void setCreateTime(Date createTime) {
-		this.createTime = createTime;
-	}
+    public void setCreateTime(Date createTime) {
+        this.createTime = createTime;
+    }
 
-	public String getUpdateUser() {
-		return updateUser;
-	}
+    public String getUpdateUser() {
+        return updateUser;
+    }
 
-	public void setUpdateUser(String updateUser) {
-		this.updateUser = updateUser;
-	}
+    public void setUpdateUser(String updateUser) {
+        this.updateUser = updateUser;
+    }
 
-	public Date getUpdateTime() {
-		return updateTime;
-	}
+    public Date getUpdateTime() {
+        return updateTime;
+    }
 
-	public void setUpdateTime(Date updateTime) {
-		this.updateTime = updateTime;
-	}
+    public void setUpdateTime(Date updateTime) {
+        this.updateTime = updateTime;
+    }
 }

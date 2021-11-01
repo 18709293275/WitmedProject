@@ -1,5 +1,6 @@
 package com.whackon.witmed.base.configuration;
 
+import com.whackon.witmed.base.util.BaseConstants;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import springfox.documentation.builders.ApiInfoBuilder;
@@ -11,42 +12,50 @@ import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 
 /**
- * <b>系统基础信息类 - Swagger 接口文档生成框架配置类</b>
- * <p>
- *     接口文档访问地址：/swagger-ui/index.html
- * </p>
- * @author He'l'lo'World
+ * <b>Swagger RESTFUL接口的文档生成框架配置类</b>
+ * @author Arthur
  * @version 1.0.0
  * @since 1.0.0
  */
 @Configuration
 public class SwaggerConfiguration {
-	@Bean
-	public Docket createAPI() {
-		return new Docket(DocumentationType.SWAGGER_2)
-				// 设定生成文档的相关文件信息
-				.apiInfo(apiInfo())
-				// 设置 Swagger 注解扫描位置
-				.select()
-				.apis(RequestHandlerSelectors.basePackage("com.whackon.witmed"))
-				.paths(PathSelectors.any())
-				.build();
-	}
 
-	/**
-	 * <b>设定生成文档信息</b>
-	 * @return
-	 */
-	private ApiInfo apiInfo() {
-		return new ApiInfoBuilder()
-				// 生成接口文档标题
-				.title("智慧医疗信息平台 - 交互接口文档")
-				// 配置项目描述信息
-				.description("前后交互接口文档")
-				// 设定项目文档版本号
-				.version("1.0.0")
-				// 设置项目联系人信息
-				.contact(new Contact("Arthur", "www.whackon.com", "whackon@163.com"))
-				.build();
-	}
+    /**
+     * <b>配置 Swagger 核心对象 Docket 信息</b>
+     * @return
+     */
+    @Bean
+    public Docket createRestAPI() {
+        Docket docket = new Docket(DocumentationType.SWAGGER_2)
+                // 设置文档生成信息
+                .apiInfo(apiInfo())
+                // 设置 Swagger 扫描基础包位置
+                .select()
+                .apis(RequestHandlerSelectors.basePackage(BaseConstants.SWAGGER_SCAN_PACKAGE))
+                .paths(PathSelectors.any())
+                .build();
+        return docket;
+    }
+
+    /**
+     * <b>获得生成文档信息对象</b>
+     * @return
+     */
+    private ApiInfo apiInfo() {
+        ApiInfo apiInfo = new ApiInfoBuilder()
+                // 设置接口文档生成标题
+                .title(BaseConstants.SWAGGER_TITLE)
+                // 设置接口文档描述信息
+                .description(BaseConstants.SWAGGER_DESCRIPTION)
+                // 设置接口文档版本信息
+                .version(BaseConstants.SWAGGER_VERSION)
+                // 设置接口文档联系人信息
+                .contact(
+                        new Contact(
+                                BaseConstants.SWAGGER_CONTACT_NAME,
+                                BaseConstants.SWAGGER_CONTACT_URL,
+                                BaseConstants.SWAGGER_CONTACT_EMAIL))
+                .build();
+        return apiInfo;
+    }
 }

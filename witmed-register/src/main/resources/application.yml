@@ -1,0 +1,21 @@
+###### 配置项目启动端口号
+server:
+  port: 9999
+spring:
+  ###### 配置项目应用名
+  application:
+    name: witmed-register
+###### 配置 Eureka Server 信息
+eureka:
+  ###### 配置 Eureka Server 主机名
+  instance:
+    hostname: localhost
+  ###### 配置 Eureka Client 信息
+  client:
+    ###### 禁止 Eureka Server 项目将自己的服务在注册中心中进行注册
+    register-with-eureka: false
+    ###### 禁止 Eureka Server 项目去其他注册中心中发现项目
+    fetch-registry: false
+    ###### 暴露其他 Eureka Client 项目连接 Eureka Server 地址
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
