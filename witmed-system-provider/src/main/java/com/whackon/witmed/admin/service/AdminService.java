@@ -4,7 +4,7 @@ import com.whackon.witmed.system.admin.pojo.vo.AdminVO;
 
 /**
  * <b>系统功能 - 系统用户业务层接口</b>
- * @author Arthur
+ * @author He'l'lo'World
  * @version 1.0.0
  * @since 1.0.0
  */

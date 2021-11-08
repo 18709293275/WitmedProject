@@ -4,7 +4,7 @@ import com.whackon.generator.pojo.vo.GeneratorVO;
 
 /**
  * <b>生成器业务层接口</b>
- * @author Arthur
+ * @author He'l'lo'World
  * @version 1.0.0
  */
 public interface GeneratorService {

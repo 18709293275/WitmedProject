@@ -16,7 +16,7 @@ import javax.servlet.http.HttpSession;
  *     3、HttpSession<br/>
  *     本项目所有功能控制层类<b>都必须继承于本系统基础控制层类</b>。
  * </p>
- * @author Arthur
+ * @author He'l'lo'World
  * @version 1.0.0
  * @since 1.0.0
  */

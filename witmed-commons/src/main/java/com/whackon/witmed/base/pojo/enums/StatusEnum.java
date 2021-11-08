@@ -2,7 +2,7 @@ package com.whackon.witmed.base.pojo.enums;
 
 /**
  * <b>系统基础状态枚举信息</b>
- * @author Arthur
+ * @author He'l'lo'World
  * @version 1.0.0
  * @since 1.0.0
  */

@@ -8,7 +8,7 @@ import java.io.Serializable;
 /**
  * <b>系统查询分页视图信息</b>
  * @param <E>
- * @author Arthur
+ * @author He'l'lo'World
  * @version 1.0.0
  * @since 1.0.0
  */

@@ -18,7 +18,7 @@ import java.util.List;
 
 /**
  * <b>系统功能 - 数据字典信息业务层接口实现类</b>
- * @author Arthur
+ * @author He'l'lo'World
  * @version 1.0.0
  * @since 1.0.0
  */

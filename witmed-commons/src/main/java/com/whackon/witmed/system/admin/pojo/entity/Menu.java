@@ -8,7 +8,7 @@ import java.util.List;
 
 /**
  * <b>系统功能 - 系统菜单实体信息</b>
- * @author Arthur
+ * @author He'l'lo'World
  * @version 1.0.0
  * @since 1.0.0
  */

@@ -14,7 +14,7 @@ import java.io.Serializable;
  * </p>
  * @param <E>
  *
- * @author Arthur
+ * @author He'l'lo'World
  * @version 1.0.0
  * @since 1.0.0
  */

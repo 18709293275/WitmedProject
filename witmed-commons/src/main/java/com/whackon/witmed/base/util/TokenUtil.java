@@ -12,7 +12,7 @@ import java.util.Map;
 
 /**
  * <b>系统 Token 工具类</b>
- * @author Arthur
+ * @author He'l'lo'World
  * @version 1.0.0
  * @since 1.0.0
  */

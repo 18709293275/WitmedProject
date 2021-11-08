@@ -17,7 +17,7 @@ import java.util.Date;
  *     5、updateTime：修改时间<br/>
  *     本项目所有视图信息<b>都必须继承于本统基础视图信息</b>。
  * </p>
- * @author Arthur
+ * @author He'l'lo'World
  * @version 1.0.0
  * @since 1.0.0
  */

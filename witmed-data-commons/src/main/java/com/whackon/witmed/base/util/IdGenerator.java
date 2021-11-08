@@ -25,7 +25,7 @@ import java.util.Random;
  *     SnowFlake 的优点是，整体上按照时间自增排序，并且整个分布式系统内不会产生 ID 碰撞(由数据中心 ID 和机器 ID 作区分)，并且效率较高。
  *     最多支持 1024 台机器，每台机器每毫秒能够生成最多 4096 个 ID，整个集群理论上每秒可以生成 1024 * 1000 * 4096 = 42 亿个 ID。
  * </p>
- * @author Arthur
+ * @author He'l'lo'World
  * @version 1.0.0
  */
 @Component("idGenerator")

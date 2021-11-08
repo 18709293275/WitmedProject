@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.*;
 
 /**
  * <b>系统功能 - 数据字典信息控制层类</b>
- * @author Arthur
+ * @author He'l'lo'World
  * @version 1.0.0
  * @since 1.0.0
  */

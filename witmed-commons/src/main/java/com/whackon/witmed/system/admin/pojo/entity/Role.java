@@ -6,7 +6,7 @@ import com.whackon.witmed.system.admin.pojo.vo.RoleVO;
 
 /**
  * <b>系统功能 - 系统人员角色实体信息</b>
- * @author Arthur
+ * @author He'l'lo'World
  * @version 1.0.0
  * @since 1.0.0
  */

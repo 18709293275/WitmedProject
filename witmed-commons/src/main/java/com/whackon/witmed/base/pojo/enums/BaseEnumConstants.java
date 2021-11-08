@@ -4,7 +4,7 @@ import java.util.Properties;
 
 /**
  * <b>系统级别基础枚举信息常量类</b>
- * @author Arthur
+ * @author He'l'lo'World
  * @version 1.0.0
  * @since 1.0.0
  */

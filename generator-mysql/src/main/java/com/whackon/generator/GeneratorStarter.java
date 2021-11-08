@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * <b>代码生成器 MySQL 版启动类</b>
- * @author Arthur
+ * @author He'l'lo'World 
  * @version 1.0.0
  */
 @SpringBootApplication

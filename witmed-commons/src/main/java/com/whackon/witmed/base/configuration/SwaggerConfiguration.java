@@ -13,7 +13,7 @@ import springfox.documentation.spring.web.plugins.Docket;
 
 /**
  * <b>Swagger RESTFUL接口的文档生成框架配置类</b>
- * @author Arthur
+ * @author He'l'lo'World
  * @version 1.0.0
  * @since 1.0.0
  */

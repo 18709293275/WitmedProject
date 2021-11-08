@@ -7,7 +7,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 
 /**
  * <b>系统功能 - Consumer 启动类</b>
- * @author Arthur
+ * @author He'l'lo'World r
  * @version 1.0.0
  * @since 1.0.0
  */
